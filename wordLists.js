@@ -1,7 +1,8 @@
 var hardWordsList = [
     "phlegm",
-    "",
-    ""];
+    "neonatologist",
+    "urologist"];
+//hard words list is not very good :(
 var foodBrandWordsList = [
     "cocacola",
     "ritz",
