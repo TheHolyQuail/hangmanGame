@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="wordLists.js"></script>
+    <script src="script.js"></script>
+    <title>Hangman</title>
+</head>
+    <body onload="start()">
+        <div id="start">
+            <h1>Welcome to hangman!</h1>
+            <p id="spoken">You are probably here for something pretty bad but whatever...<break/> I'm bored so I'll let you play a game to survive. <break/> If you win I'll let you escape. If you lose you will die.</p>
+            <div id="pickTopic">
+                <select id="categorySelection" class="w3-dropdown-hover">
+                    <option value="none">pick a category</option>
+                    <option value="Challenge Words">Challenge Words</option>
+                    <option value="Food Brands">Food Brands</option>
+                    <option value="Common Brands">Common Brands</option>
+                    <option value="Car Brands">Car Brands</option>
+                    <option value="Videogame words">Videogame words</option>
+                </select>
+
+                <button id="catSelect" onclick="playGame()">play game</button>
+            </div>
+        </div>
+        <div id="game" class="w3-panel w3-padding-16">
+            <div id="gameProgress" class="w3-round-large">
+                <h1 id="gameName"></h1>
+                <h2 id="topic"></h2>
+
+                <h5 id="incorrectLetters"></h5>
+                <h5 id="remainingGuesses"></h5>
+
+                <h4 id="wordProgress"></h4>
+
+                <!--<h5 id="un1"></h5>-->
+                <!--<h5 id="un2"></h5>-->
+            </div>
+            <div id="functional" class="w3-panel w3-padding-16">
+                <div class="w3-button w3-circle w3-round-large" id="buttons"></div>
+            </div>
+
+        </div>
+        <div id="reset" class="w3-panel w3-padding-16">
+            <button id="restart" class="w3-button w3-black w3-hover-green" onclick="reset()">Restart</button>
+        </div>
+        <div id="animation" class="w3-panel">
+            <canvas class="w3-panel w3-border-top w3-border-bottom" id="canvas" width="200px" height="200px"></canvas>
+        </div>
+        <div id="end">
+            <h3 id="WinOrLoose"></h3>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: #e3e0e3;
+}
+
+#start{
+    display: block;
+}
+
+#game{
+    display: none;
+}
+
+#end{
+    display: block;
+}
+#reset{
+    display: none;
+}
+
+#animation{
+    display: block;
+}
+#canvas{
+    border: double;
+}
